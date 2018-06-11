@@ -1,7 +1,7 @@
-package main.controller;
+package src.main.controller;
 
-import nl.hanze.application.entities.User;
-import nl.hanze.application.service.UserService;
+import src.main.application.entities.Program;
+import src.main.application.service.programService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -29,7 +29,7 @@ public class Controller {
 		List<Program> programList = programService.findAll();
 		String password;
 		for (Program program:programList) {
-			if (user.getUsername().toLowerCase().equals(name)) {
+			if (user.getProgramName().toLowerCase().equals(name)) {
 				return user;
 			}
 		}
@@ -47,7 +47,7 @@ public class Controller {
 	@PostMapping(value = "/add", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public ResponseEntity<Program> add(
 			@Valid @RequestBody Program program) {
-		return new ResponseEntity<Program>(programService.save(user),HttpStatus.CREATED);
+		return new ResponseEntity<Program>(programService.save(program),HttpStatus.CREATED);
 	}
 
 	@DeleteMapping("/program/{id}")
