@@ -2,60 +2,40 @@
     <fieldset>
         <legend>Voer Programma onderdeel in: </legend>
         Programma titel
-        <input type="text" name="programmaTitel" placeholder="Programma titel" required>
+        <input type="text" name="naamVoorstelling" placeholder="Programma titel" required>
         <label>Voeg beschrijving toe
             <textarea name="beschrijving"> </textarea>
         </label>
         <label>
-        Naam organisator
-        <input type="text" name="organisatorNaam" placeholder="Naam organisator" required>
-        </label>
-        <label>
-            E-mail organisator
-            <input type="email" name="email">
-        </label>
-        <label>
-            Telefoon organisator
-            <input type="tel" name="usrtel">
+        Naam artiest
+        <input type="text" name="artistName" placeholder="Naam organisator" required>
         </label>
         <label>
             Kies locatie
             <select type="radio" name="locatie" required>
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="fiat">Fiat</option>
-                <option value="audi">Audi</option>
+                <option value="volvo">Mainstage</option>
+                <option value="saab">Tent</option>
+                <option value="fiat">Container</option>
             </select>
         </label>
         <label>
-            Kies Categorie
-            <select type="radio" name="categorie" required>
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="fiat">Fiat</option>
-                <option value="audi">Audi</option>
+            Kies genre
+            <select type="radio" name="genre" required>
+                <option value="volvo">Muziek</option>
+                <option value="saab">Theater</option>
+                <option value="fiat">Dans</option>
             </select>
-        </label>
-        <label>
-            Gratis te bezoeken?
-            <input type="radio" name="gratis" value="ja">
-        Ja <br>
-            <input type="radio" name="gratis" value="nee">
-        Nee <br>
         </label>
         <label>Kies speeldag
-            <input type="checkbox" name="speeldag1" value="slotmaandag"> Maandag <br>
-            <input type="checkbox" name="speeldag2" value="slotdinsdag"> Dinsdag <br>
-            <input type="checkbox" name="speeldag3" value="slotwoensdag"> Woendag <br>
-            <input type="checkbox" name="speeldag4" value="slotdonderdag"> Donderdag <br>
-            <input type="checkbox" name="speeldag5" value="slotvrijdag"> Vrijdag <br>
+            <input type="checkbox" name="speeldag3" value="slotwoensdag"> Vrijdag <br>
+            <input type="checkbox" name="speeldag4" value="slotdonderdag"> Zaterdag <br>
+            <input type="checkbox" name="speeldag5" value="slotvrijdag"> Zondag <br>
         </label>
         <label>
         Kies speeltijd
         <input type="checkbox" name="speeltijd1" value="1700"> 17:00 uur <br>
-        <input type="checkbox" name="speeltijd2" value="1800"> 18:00 uur <br>
         <input type="checkbox" name="speeltijd3" value="1900"> 19:00 uur <br>
-        <input type="checkbox" name="speeltijd4" value="2000"> 20:00 uur <br>
+        <input type="checkbox" name="speeltijd4" value="2000"> 21:00 uur <br>
         </label>
         <label>
         Voeg plaatjes toe
