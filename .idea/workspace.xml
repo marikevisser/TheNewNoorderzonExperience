@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3239e9cf-db3c-40c9-910a-ce2c9b688fe2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/html/formulierProgrammaInvoer" afterPath="$PROJECT_DIR$/src/main/frontend/html/formulierProgrammaInvoer" />
-    </list>
+    <list default="true" id="3239e9cf-db3c-40c9-910a-ce2c9b688fe2" name="Default" comment="" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +218,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1139000" />
+    <option name="totallyTimeSpent" value="1240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="731" extended-state="6" />
