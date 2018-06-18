@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action ="hierwebpaginanoginvullen" method="get" id="zoekformulier">
+
+    <h1>ZOEKFORMULIER</h1>
+
+    <fieldset>
+        <legend>Zoek hier gericht naar een bepaalde artiest of voorstelling</legend> <br />
+        <label>Vul (een deel van) de naam in van de artiest die je zoekt:<br />
+        <input type="text" name="zoekopartiest"></label>
+        <input type="submit" value="zoek artiest"><br />
+        <br />
+        <label>Vul (een deel van) de naam in van de voorstelling die je zoekt:<br />
+        <input type="text" name="zoekopvoorstelling"></label>
+        <input type="submit" value="zoek voorstelling"><br />
+    </fieldset>
+    <br />
+    <br />
+    <fieldset>
+        <legend>Zoek hier een artiest of voorstelling die bij je past</legend><br />
+        <label>Kies hier het genre waar je van houdt:</label><br />
+        <input id="muziek" type="radio" name="genre" value="m">
+        <label for="muziek"> Muziek </label><br />
+        <input id="theater" type="radio" name="genre" value="t">
+        <label for="theater"> Theater </label><br />
+        <input id="dans" type="radio" name="genre" value="d">
+        <label for="dans"> Dans </label><br />
+        <br />
+        <input type="submit" value="zoek">
+    </fieldset>
+</form>
+</body>
+</html>
