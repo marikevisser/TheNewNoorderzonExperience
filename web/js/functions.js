@@ -10,10 +10,10 @@ $(document).ready(function(){
     e.preventDefault();
   // var animation = 'div-left slideInLeft';
     animate('zoomOutUp');
-  })
+  });
 
   $('.js--animations').change(function(){
    // var animation = $(this).val();
     animate('zoomOutUp');
   });
-})
+});

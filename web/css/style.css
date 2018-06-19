@@ -3,10 +3,67 @@
     src: url(../fonts/averta-regular.otf);
 }
 
+/* ---------------
+reset CSS - start */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ---------------
+reset CSS - end */
+
 body, button {
   font-family: Averta, sans-serif;
   font-size: 20px;
   color: #4a4a4a;
+    background-color: #eee;
 }
 
 .start {
@@ -20,10 +77,8 @@ body, button {
     left: 0;
     top: 0;
     z-index: 10;
-    background-image: url(../images/start-bg.png);
-    background-position: center;
+    background: url(../images/start-bg.png) center no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 #logo-front {
@@ -36,9 +91,8 @@ body, button {
     top: 0;
     right:0;
     float: right;
-    width: 22%;
+    width: 62%;
     height: 100%;
-    padding-right: 40%;
     background-color: rgba(145, 200, 170,0.5);
 }
 
@@ -61,8 +115,72 @@ body, button {
     background-color: transparent;
     border-radius: 4px;
     border-color: #4a4a4a;
+    margin-bottom: 10px;
 }
 
 .hidden {
     display:none;
+}
+
+.top-bar {
+    padding: 5px 20px;
+    vertical-align: bottom;
+    background-color: #fff;
+}
+
+.top-menu {
+    float: right;
+    border-bottom: 1px;
+    border-color: #4a4a4a;
+}
+
+.top-menu ul {
+    vertical-align: text-bottom;
+}
+
+.top-menu li {
+    display: inline;
+    vertical-align: text-bottom;
+    margin: 0 10px;
+}
+
+.section {
+    margin: 25px 0;
+}
+
+.section-title {
+    position: absolute;
+    padding: 5px;
+    top: 10px;
+    left: 17em;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    width: 140px;
+    text-align: center;
+    background-color: rgba(50, 50, 50, 0.3);
+}
+
+.items {
+
+    margin-top: 60px;
+    height: 320px;
+/ / padding: 10 px 20 px;
+}
+
+.line-up li {
+
+}
+
+.line-up img {
+    text-align: right;
+}
+
+.line-up p {
+    margin-top: -30px;
+    color: #fff;
+    text-align: right;
+    margin-right: 25px;
 }
