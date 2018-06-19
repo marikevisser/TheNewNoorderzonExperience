@@ -1,11 +1,5 @@
 package src.main.controller;
 
-import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 public class Database implements AutoCloseable {
     private EntityManagerFactory emf = Persistence.createEntityManagerFactory("nl.itacademy.zuul");
 
@@ -33,7 +27,7 @@ public class Database implements AutoCloseable {
     public Voorstelling zoekVoorstellingOpArtiest(NaamVanArtiest) {
         String NaamVanArtiest = reader.getInputVanFormulierOfzo() // hoe komen we aan die input?
         TypedQuery<Voorstelling> q = em.createQuery(
-                "SELECT v FROM Voorstelling v WHERE v.artiest CONTAINS :naamvanartiest",
+                "SELECT v FROM Entities.Voorstelling v WHERE v.artiest CONTAINS :naamvanartiest",
                 Voorstelling.class);
         q.setParameter("naamvanartiest", NaamVanArtiest)
         for (Voorstelling v : q.getResultList()) {
@@ -49,7 +43,7 @@ public class Database implements AutoCloseable {
     public Voorstelling zoekVoorstellingOpNaam(DeelVanNaam) {
         String DeelVanNaam = reader.getInputVanFormulierOfzo // hoe komen we aan die input?
         TypedQuery<Voorstelling> q = em.createQuery(
-                "SELECT v FROM Voorstelling v WHERE v.name CONTAINS :deelvannaam", Voorstelling.class);
+                "SELECT v FROM Entities.Voorstelling v WHERE v.name CONTAINS :deelvannaam", Voorstelling.class);
         q.setParameter("deelvannaam", DeelVanNaam)
         for (Voorstelling v : q.getResultList()) {
             return v.getDetails(); // uitzoeken hoe die methode heet
@@ -63,7 +57,7 @@ public class Database implements AutoCloseable {
     public Voorstelling zoekVoorstellingOpGenre(Genre) {
         String Genre = reader.getInputVanFormulierOfzo // hoe komen we aan die input?
         TypedQuery<Voorstelling> q = em.createQuery(
-                "SELECT v FROM Voorstelling v WHERE v.genre = :genre", Voorstelling.class);
+                "SELECT v FROM Entities.Voorstelling v WHERE v.genre = :genre", Voorstelling.class);
         q.setParameter("genre", Genre)
         for (Voorstelling v : q.getResultList()) {
             return v.getDetails(); // uitzoeken hoe die methode heet
