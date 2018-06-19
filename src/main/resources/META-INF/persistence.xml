@@ -3,13 +3,12 @@
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
              version="2.0">
-    <persistence-unit name="nl.itacademy.hr">
+    <persistence-unit name="Noorderzon_data">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>nl.itacademy.hr.Job</class>
-        <class>nl.itacademy.hr.JobGrade</class>
-        <class>nl.itacademy.hr.JobHistory</class>
-        <class>nl.itacademy.hr.Location</class>
-        <class>nl.itacademy.hr.Region</class>
+        <class>Noorderzon_data.Entities.Artiest</class>
+        <class>Noorderzon_data.Entities.Locatie</class>
+        <class>Noorderzon_data.Entities.Tijd</class>
+        <class>Noorderzon_data.Entities.Voorstelling</class>
         <properties>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/..." />
             <property name="javax.persistence.jdbc.user" value="..." />
